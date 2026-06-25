@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/lsoto-cenfo/SOFT-309-M6-2025#readme",
   "devDependencies": {
-    "@playwright/test": "^1.54.1",
+    "@playwright/test": "^1.61.1",
     "@types/node": "^24.1.0"
   },
   "dependencies": {

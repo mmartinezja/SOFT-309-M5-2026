@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 const BASE = 'https://dummyjson.com';
 
 // ---------------------------------------------------------------------------
-// Users
+// Prueba de Workflow
 // ---------------------------------------------------------------------------
 test.describe('Users', () => {
   test('GET /users returns list', async ({ request }) => {
