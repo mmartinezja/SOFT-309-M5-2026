@@ -21,12 +21,12 @@ for (let run = 1; run <= 100; run++) {
       await inventory.productItems.first().waitFor({ state: "visible" });
     });
 
-    test("should display all 6 products @smoke", async () => {
+    test("should display all 6 products @smoke @critical", async () => {
       const count = await inventory.getProductCount();
       expect(count).toBe(TOTAL_PRODUCTS);
     });
 
-    test("should add a random product and update cart badge to 1 @smoke", async () => {
+    test("should add a random product and update cart badge to 1 @smoke @critical", async () => {
       const count = await inventory.getProductCount();
       const randomIndex = Math.floor(Math.random() * count);
       await inventory.addItemByIndex(randomIndex);
