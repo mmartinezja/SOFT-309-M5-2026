@@ -48,6 +48,12 @@ jobs:
       - name: Run tests (shard ${{ matrix.shard }} of 8)
         run: npx playwright test --shard=${{ matrix.shard }}/8
 
+      - name: Upload Playwright Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-results-shard-${{ matrix.shard }}
+          path: test-results/
+
       - name: Generate Allure report
         run: allure generate allure-assets -c --single-file
 
